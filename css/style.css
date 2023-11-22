@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a , li {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    font-style: none;
+}
+
+/*Header*/
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #2d2d2d;
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    border-bottom: solid 10px #8598cd;
+    border-bottom-style: double;
+    box-shadow: rgb(0, 0, 0, 0.30) 10px 5px 10px 10px
+}
+#navInicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header section article a {
+    height: 90px;
+    display: flex; 
+    align-items: center;
+    position: relative;
+}
+header section article a div {
+    display: inline-block;
+    text-align: center;   
+}
+.inicioBack {
+    position: absolute;
+    width: 28%;
+    height: 90px;
+    margin-left: 1%;
+}
+.artNav h1 {
+    color: #343E6B;
+    font-size: 65px;
+    font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ivstNav h1 {
+    color: #2d2d2d;
+    font-size: 65px;
+    font-family: 'Consolas', Courier, monospace;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0,);
+}
+header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header section nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+header section nav ul li{
+    background-color: #8598cd;
+    width: 200px;
+    text-align: center;
+    border-radius: 30px;
+}
+header section nav ul li{
+    font-size: 35px;
+    margin-left: 30px;
+}
+header section nav ul li a {
+    color: #343E6B;
+}
+header img {
+    width: 80px;
+    height: 80px;
+}
+header section nav ul {
+    text-align: right;
+    display: inline;
+}
+#navMenuPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 9.15%;
+    height: 90px;
+}
+
+/*Main*/
+main{
+    min-height: 100vh;
+    background-color: #2d2d2d;
+    padding: 120px 50px 20px 50px;
+}
+
+/*Main Inicio*/
+#mainBanner {
+    background-image: url(/images/Index/ArtIvst-09.jpg);
+}
+#logoMainPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 30px;
+}
+#logoMainPage img{
+    width: 30vw;
+    height: 60vh;
+    text-align: center;
+}
+#textoMainPage {
+    font-size: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    position: relative;
+}
+#textoMainPage .art{
+    font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3C4471;
+
+}
+#textoMainPage .ivst {
+    font-family: 'Consolas', Courier, monospace;
+    color: #2d2d2d;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+/*Main Spnre Mí*/
+.mainAboutMe {
+    display: flex;
+    justify-content: center;
+}
+.mainAboutMe img {
+    border-radius: 30px;
+    width: 80%;
+    height: 100vh;
+}
+
+/*Main Certificados*/
+#mainCertificados {
+    display: grid;
+    text-align: center;
+}
+#mainCertificados img {
+    padding: 20px;
+}
+
+/*Main Proyectos*/
+#mainProjectos {
+    display: grid;
+    text-align: center;
+}
+#mainProjectos .webImage img{
+    width: 600px;
+    height: 480px;
+    border: solid 2px #8598cd;
+}
+#mainProjectos article div {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+#mainProjectos article div h1 {
+    font-size: 70px;
+    color: #8598cd;
+}
+
+/*Main Contactos*/
+.imgContactos1 {
+    text-align: right;
+    margin-right: 10%;
+    padding-top: 20px;
+}
+.imgContactos1 img{
+    border: solid 2px #8598cd;
+    border-radius: 30px;
+}
+.imgContactos2 {
+    text-align: left;
+    margin-left: 10%;
+    padding-bottom: 20px;
+}
+.imgContactos2 img{
+    border: solid 2px #8598cd;
+    border-radius: 30px;
+}
+
+/*Footer*/
+#fullFooter {
+    margin-top: auto;
+    width: 100%;
+    height: 150px;
+    background-color: #2d2d2d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-top: solid 10px #8598cd;
+    border-top-style: double;
+    box-shadow: rgb(0, 0, 0, 0.30) 10px -5px 10px 10px
+}
+footer img {
+    height: 100px;
+    width: 100px;
+}
+footer ul li {
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    margin: 8px;
+}
+footer ul li a {
+    color: #8598cd;
+}
+#navFooter {
+    display: inline-block;
+    text-align: center;
+}
+#lineaFoot {
+    border: solid 5px #8598cd;
+    width:100%;
+}
