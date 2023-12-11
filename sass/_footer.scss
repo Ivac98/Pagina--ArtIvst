@@ -1,0 +1,115 @@
+footer {
+    margin-top: auto;
+    height: 150px;
+    max-width: 100vw;
+    background-color: #2d2d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 10px #8598cd;
+    border-top-style: double;
+    box-shadow: rgb(0, 0, 0, 0.30) 10px -5px 10px 10px;
+    .f-logo {
+        img {
+            display: flex;
+            height: 127px;
+            width: 120px;
+        }
+    }
+    .nav-f {
+        display: inline-block;
+        text-align: center;
+        justify-self: center;
+        grid-area: navFooter;
+        border-left: solid 2px #8598cd;
+        border-right: solid 2px #8598cd;
+        padding-left: 20px;
+        margin-left: 20px;
+        padding-right: 20px;
+        margin-right: 20px;
+        width: fit-content;
+        ul li {
+            margin: 7.5px;
+            position: relative;
+            cursor: pointer;
+            }
+            a {
+                font-size: 20px;
+                color: #8598cd;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #8598cd;
+                    border-radius: 100px;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform 0.35s ease-out;
+                }
+                &:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: left;
+                }
+            }
+    }
+    .f-logo2 {
+        img {
+            display: flex;
+            height: 127px;
+            width: 120px;
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .f-logo {
+            img {
+                height: 80px;
+                width: 80px;
+            }
+        }
+        .nav-f {
+            border-top: solid 2px #8598cd;
+            border-bottom: solid 2px #8598cd;
+            border-left: none;
+            border-right: none;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            ul li a {
+                font-size: 1rem;
+            }
+        }
+        .f-logo2 {
+            img {
+                height: 80px;
+                width: 80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    footer {
+        .f-logo {
+            img {
+                height: 60px;
+                width: 60px;
+            }
+        }
+        .f-logo2 {
+            img {
+                height: 60px;
+                width: 60px;
+            }
+        }
+    }
+}
