@@ -252,7 +252,7 @@ footer .f-logo2 img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 110ox;
+  padding-top: 120px;
 }
 #main-banner .logo-main-page {
   padding-top: 100px;
@@ -358,7 +358,7 @@ footer .f-logo2 img {
   }
 }
 #main-aboutme {
-  padding-top: 110px;
+  padding-top: 120px;
 }
 #main-aboutme .conteiner {
   display: flex;
@@ -737,7 +737,7 @@ footer .f-logo2 img {
   }
 }
 #main-certificados {
-  padding-top: 110px;
+  padding-top: 120px;
 }
 #main-certificados section {
   display: grid;
@@ -859,7 +859,7 @@ footer .f-logo2 img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 110px;
+  padding-top: 125px;
 }
 #main-proyectos .artivst {
   display: flex;
@@ -954,7 +954,7 @@ footer .f-logo2 img {
   }
 }
 #main-contacto {
-  padding-top: 110px;
+  padding-top: 120px;
 }
 #main-contacto .tarjeta-contacto {
   display: flex;
@@ -1040,11 +1040,14 @@ footer .f-logo2 img {
 
 @media screen and (max-width: 1200px) {
   #main-contacto {
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  #main-contacto .tarjeta-contacto {
+    padding-top: 20px;
+    min-height: fit-content;
   }
   #main-contacto .tarjeta-contacto img {
     width: 80vw;
@@ -1052,13 +1055,7 @@ footer .f-logo2 img {
 }
 @media screen and (max-width: 720px) {
   #main-contacto .tarjeta-contacto {
-    height: fit-content;
-  }
-}
-@media screen and (max-width: 660px) {
-  #main-contacto .tarjeta-contacto {
-    margin: 0;
-    padding: 50px 0px;
+    height: 100%;
   }
 }
 @media screen and (max-width: 450px) {
@@ -1066,7 +1063,10 @@ footer .f-logo2 img {
     width: 90vw;
   }
   #main-contacto .contact-me .contact-form h2 {
-    font-size: 1.5rem;
+    font-size: 25px;
+  }
+  #main-contacto .contact-me .contact-form .input span {
+    font-size: 16px;
   }
 }
 

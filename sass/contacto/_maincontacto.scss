@@ -1,5 +1,5 @@
 #main-contacto {
-    padding-top: 110px;
+    padding-top: 120px;
     .tarjeta-contacto {
         display: flex;
         align-items: center;
@@ -88,12 +88,13 @@
 
 @media screen and (max-width: 1200px) {
     #main-contacto {
-        padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         .tarjeta-contacto {
+            padding-top: 20px;
+            min-height: fit-content;
             img {
                 width: 80vw;
             }
@@ -104,16 +105,7 @@
 @media screen and (max-width: 720px) {
     #main-contacto {
         .tarjeta-contacto {
-            height: fit-content;
-        }
-    }
-}
-
-@media screen and (max-width: 660px) {
-    #main-contacto {
-        .tarjeta-contacto {
-            margin: 0;
-            padding: 50px 0px;
+            height: 100%;
         }
     }
 }
@@ -128,7 +120,12 @@
         .contact-me {
             .contact-form {
                 h2 {
-                    font-size: 1.5rem;
+                    font-size: 25px;
+                }
+                .input {
+                    span {
+                        font-size: 16px;
+                    }
                 }
             }
         }
