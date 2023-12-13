@@ -19,14 +19,10 @@ footer {
     .nav-f {
         display: inline-block;
         text-align: center;
-        justify-self: center;
-        grid-area: navFooter;
         border-left: solid 2px #8598cd;
         border-right: solid 2px #8598cd;
-        padding-left: 20px;
-        margin-left: 20px;
-        padding-right: 20px;
-        margin-right: 20px;
+        padding: 0 20px;
+        margin: 0 20px;
         width: fit-content;
         ul li {
             margin: 7.5px;
