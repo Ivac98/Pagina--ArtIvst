@@ -45,8 +45,23 @@
             .redes {
                 grid-area: redes1;
                 padding-top: 20px;
-                img {
-                    width: 80px;
+                a {
+                    margin: 0 20px;
+                    cursor: pointer;
+                    span {
+                        height: 100px;
+                        width: 100px;
+                        display: flex;
+                        background: #8598cd;
+                        border-radius: 50%;
+                        box-shadow: rgb(0, 0, 0, 0.50) 0 10px 10px;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                            height: 70px;
+                            width: 70px;
+                        }
+                    }
                 }
             }
             .imagen-yo {
@@ -129,6 +144,8 @@
     }
 }
 
+
+
 @media screen and (max-width: 1200px) {
     #main-aboutme {
         .conteiner {
@@ -201,6 +218,17 @@
                     justify-self: center;
                     align-self: baseline;
                     padding-top: 10px;
+                    a {
+                        margin: 0 10px;
+                        span {
+                            height: 75px;
+                            width: 75px;
+                            img {
+                                height: 55px;
+                                width: 55px;
+                            }
+                        }
+                    }
                 }
                 .imagen-yo {
                     grid-area: fotos1;
@@ -342,19 +370,19 @@
         .intro {
             margin-bottom: 30px;
             p{
-                padding: 20px 0px;
+                padding: 20px 0;
             }
         }
         .programacion {
             margin-bottom: 30px;
             p{
-                padding: 20px 0px;
+                padding: 20px 0;
             }
         }
         .diseño {
             margin-bottom: 30px;
             p{
-                padding: 20px 0px;
+                padding: 20px 0;
             }
         }
     }
